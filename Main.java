@@ -8,6 +8,11 @@ public class Main {
         newQueue.enqueue(32);
         
         newQueue.displayAll();
+
+        newQueue.dequeue();
+
+        System.out.println();
+        newQueue.displayAll();
       
     } // end main
   

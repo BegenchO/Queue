@@ -15,6 +15,20 @@ class Queue {
         this.rear.next = temp;
         this.rear = temp;
     }
+
+    Node dequeue() {
+        if (this.front == null) {
+            return null;
+        }
+
+        Node removed = this.front;
+        this.front = this.front.next;
+
+        if (this.front == null) {
+            this.rear = null;
+        }
+        return removed;
+    }
     
     void displayAll() {
          
